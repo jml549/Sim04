@@ -1,0 +1,13 @@
+CC = gcc
+ARGS = -std=gnu99 -Wall -Wextra -pedantic -pthread -O3 -lm -o sim04
+SOURCE = Main.c InputDataProcessor.c LinkedList.c StringUtilities.c simtimer.c ProcessPcb.c
+
+all: compile
+
+compile:
+	$(CC) $(SOURCE) $(ARGS)
+
+debug: ARGS += -g
+
+clean :
+	\rm sim04
