@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    /*printf("___________BEGIN CFG DUMP___________\n");
+    printf("___________BEGIN CFG DUMP___________\n");
     printf("Version             : %d\n", data->version);
     printf("Meta Data File Path : %s\n", data->metaFilePath);
     printf("CPU Scheduling Code : %s\n", CONFIG_SCHED_MODES[data->
@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
     printf("Processor Cycle Time: %d\n", data->procCycleTime);
     printf("I/O Cycle Time      : %d\n", data->ioCycleTime);
     printf("Logging             : %s\n", CONFIG_LOG_MODES[data->logTo]);
-    printf("Log File Path       : %s\n\n", data->logPath);*/
+    printf("Log File Path       : %s\n\n", data->logPath);
 
     struct LinkedList *meta = processMetaData( data->metaFilePath );
 

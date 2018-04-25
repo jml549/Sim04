@@ -334,7 +334,7 @@ struct LinkedList *processMetaData(char *fileName) {
     }
 
     FILE *config = fopen(fileName, "r"); // Init file pointer
-    char *buffer;// Init main buffer
+    char *buffer = (char *)malloc(BUFFER_SIZE);// Init main buffer
     size_t len = 0;                      // Required variables for
     int hitStartFlag = 0;                // Flag for when we hit "Start"
                                          // flag in metadata file
